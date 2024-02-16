@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML5 - Estrutural</title>
+</head>
+
+<body>
+
+    <main> Main
+
+        <header> Header
+
+            <nav>
+                <!--Usado para lista de navegação. Como por exemplo: se for usado no header, vai enteder que é a navegação que fica no cabeçalho/menu-->
+            </nav>
+
+        </header>
+        <!-- Main é a tag principal, o correto é não ter mais de uma na semântica HTML. Não pode ser filha de header, aside, footer-->
+
+        <footer> Footer
+
+            <address> Endereço <!-- Aqui saberá, através da assessiblidade, que ficará um tipo de endereço. --></address>
+
+        </footer>
+
+        <section>
+            <!--Sessões que resultam em conteúdos, como por exemplo o resultado dado após pesquisar em uma aba ou em um menu-->
+
+            <header> Header 2 </header>
+            <footer> Footer 2 </footer>
+
+        </section> <!--Quando for usar CSS, não usar o SECTION sem conteúdo, dar prioridade para o DIV-->
+
+        <aside>
+            Aside
+            <!--Diferente da section, a semântica dele pesa mais para o lado da "não importância", como um espaço para anúncio, conteúdos de entornos, links de outros sites e ademais-->
+        </aside> <!--Representado mais como conteúdos laterais-->
+
+        <article>
+            Article <time pubdate> 25/07/2002 às 08h00 </time>
+            <!--Tag auxiliar utilizada para estilizar e definir textos auxiliares, assinaturas, datas, citações-->
+            <blockquote cite="fonte">
+                Citações
+            </blockquote>
+            <q> 
+                Pequena citação, não quebra a linha.
+            </q>
+        </article>
+
+        <figure>
+            Imagem
+            <!--Delimita a dimensão da imagem, gráfico ou ilustração-->
+
+            <img src="link" alt="texto alternativo">
+            <figcaption>Descrição da imagem/vídeo ou mídia apresentada</figcaption>
+            <!--Não tem muita diferença do "<p>", mas semanticamente falando, o correto seria a figcaption para correlacionar o texto com as mídias-->
+        </figure>
+
+        <picture>
+            <source srcset="link" alt="texto alternativo" media="tamanho mínimo (min-width)">
+            <img src="link"/>
+            <!--Possível colocar múltiplas fontes dentro da mesma mídia, quando atinge o min-widht, muda-se a imagem de acordo com a estilização-->
+        </picture>
+    </main>
+</body>
+
+</html>
